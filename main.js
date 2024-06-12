@@ -10,24 +10,64 @@
 //   { product: "coffee", price: 10 },
 //   { product: "tea", price: "" },
 // ];
+
+
 // Utiliza forEach para mostrar con console.log cada país del array de países.
+
+const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
+countries.forEach(country => {
+    console.log(country);
+});
 
 // Utiliza forEach para mostrar con console.log cada nombre del array de nombres.
 
+const names = ["Joseph", "Mathias", "Elias", "Brook"];
+names.forEach(firstName => {
+    console.log("Nombre:" firstName);
+});
+
 // Utiliza forEach para mostrar con console.log cada número del array de números.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers.forEach(number => {
+    console.log(number);
+});
 
 // Utiliza map para crear un nuevo array cambiando cada país a mayúsculas en el array de países.
 
+const withTax = cart.map((cost) => {
+    total += cost;
+    return cost * 1.2;
+  });
+
 // Utilice map para crear un array de longitudes de países a partir del array de países.
+
+const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
+const countriesLengths = countries.map(country => country.length);
+
+console.log(countriesLengths);
+
 
 // Usa map para crear un nuevo array cambiando cada número al cuadrado en el array de números.
 
 // Utilice map para cambiar cada nombre a mayúsculas en el array de nombres.
 
+const names = ["Joseph", "Mathias", "Elias", "Brook"];
+names.map(firstName => {
+    console.log(firstName);
+});
+
+
 // Utilice map para asignar el array de productos a sus correspondientes precios.
 
 // Utilice filter para filtrar los países que contienen land.
 
+const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
+const countriesLand = countries.filter((country) =>
+    country.includes("land")
+  );
+  console.log(countriesLand);
+ 
 // Utilice filter para filtrar los países que tienen seis caracteres.
 
 // Utilice filter para filtrar los países que contengan seis letras o más en el array de países.
