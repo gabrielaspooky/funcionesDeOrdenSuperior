@@ -33,12 +33,9 @@ numbers.forEach(number => {
     console.log(number);
 });
 
+
 // Utiliza map para crear un nuevo array cambiando cada país a mayúsculas en el array de países.
 
-const withTax = cart.map((cost) => {
-    total += cost;
-    return cost * 1.2;
-  });
 
 // Utilice map para crear un array de longitudes de países a partir del array de países.
 
@@ -60,17 +57,27 @@ names.map(firstName => {
 
 // Utilice map para asignar el array de productos a sus correspondientes precios.
 
+
 // Utilice filter para filtrar los países que contienen land.
 
 const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
-const countriesLand = countries.filter((country) =>
-    country.includes("land")
-  );
-  console.log(countriesLand);
+const countriesLand = countries.filter((country) => 
+    country.toLowerCase().includes("land")
+);
+console.log(countriesLand);
  
 // Utilice filter para filtrar los países que tienen seis caracteres.
 
+const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
+const countriesSixChar = countries.filter(country => country.length === 6);
+console.log(countriesSixChar); 
+
+
 // Utilice filter para filtrar los países que contengan seis letras o más en el array de países.
+
+const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
+const countriesSixChar = countries.filter(country => country.length >= 6);
+console.log(countriesSixChar); 
 
 // Utilice filter para filtrar los países que empiezan por "E";
 
