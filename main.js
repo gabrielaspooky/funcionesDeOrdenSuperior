@@ -89,6 +89,10 @@ console.log(countriesSixChar);
 
 // Utiliza reduce para concatenar todos los países y producir esta frase: Estonia, Finland, Sweden, Denmark, Norway, y IceLand son países del norte de Europa
 
+const concatenatedPhrase = countries.reduce(
+    (accumulator, currentValue, index) =>
+)
+
 // Explique la diferencia entre some y every
 
 // Utilice some para comprobar si la longitud de algunos nombres es superior a siete en el array de nombres.
