@@ -1,3 +1,7 @@
+import { countriesData } from "./countries_data";
+
+console.log(countriesData);
+
 // Ejercicios: Nivel 1
 // const countries = ["US", "Sweden", "Denmark", "Norway", "IceLand"];
 // const names = ["Joseph", "Mathias", "Elias", "Brook"];
@@ -112,6 +116,10 @@ const concatenatedPhrase = countries.reduce(
 // Encuentre la suma del precio de los productos usando sólo reduce(callback)).
 
 // Cree una función que retorne un array de objetos, que es la letra y el número de veces que la letra usa para empezar el nombre de un país.
+
+const getStartingLetter = (acc, currentValue) => newAcc;
+
+
 
 // Declara una función getFirstTenCountries y retorna un array de diez países. Utiliza diferente programación funcional para trabajar en el array countries.js.
 
